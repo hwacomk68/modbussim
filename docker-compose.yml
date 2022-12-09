@@ -1,0 +1,82 @@
+version: "2.2"
+services:
+  101_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: 101_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10502:10502"
+  102_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: 102_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10503:10502"
+  201_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: 201_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10504:10502"
+  202_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: 202_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10505:10502"
+  203_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: 203_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10506:10502"
+  pl1_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: pl1_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10507:10502"
+  pl1_meter_2:
+    restart: always
+    image: "modbussim:latest"
+    container_name: pl1_meter_2
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10508:10502"
+  pl2_meter_1:
+    restart: always
+    image: "modbussim:latest"
+    container_name: pl2_meter_1
+    logging:
+        options:
+            max-file: "10"
+            max-size: "50m"
+    ports:
+      - "10509:10502"
