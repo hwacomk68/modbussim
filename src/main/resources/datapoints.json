@@ -17,24 +17,18 @@
     "specifyTime": [
       {
         "start": "0800",
-        "end": "1230",
-        "min": 55,
-        "max": 65
-      },
-      {
-        "start": "1330",
         "end": "1900",
-        "min": 55,
-        "max": 65
+        "min": 20,
+        "max": 30
       }
     ],
     "resetValue": false,
-    "desc": "迴路1實功功率"
+    "desc": "circuit_1_p_dm"
   },
   {
     "id": 2,
     "min": 0,
-    "max": 1,
+    "max": 0,
     "start": 4162,
     "end": 4163,
     "gen": false,
@@ -44,7 +38,7 @@
     "specify": false,
     "specifyTime": [],
     "resetValue": false,
-    "desc": "迴路1總有效電能"
+    "desc": "circuit_1_kwh"
   },
   {
     "id": 3,
@@ -64,19 +58,13 @@
     "specifyTime": [
       {
         "start": "0800",
-        "end": "1230",
-        "min": 15,
-        "max": 25
-      },
-      {
-        "start": "1330",
         "end": "1900",
-        "min": 15,
-        "max": 25
+        "min": 1,
+        "max": 10
       }
     ],
     "resetValue": false,
-    "desc": "迴路2實功功率"
+    "desc": "circuit_2_p_dm"
   },
   {
     "id": 4,
@@ -91,7 +79,7 @@
     "specify": false,
     "specifyTime": [],
     "resetValue": false,
-    "desc": "迴路2總有效電能"
+    "desc": "circuit_2_kwh"
   },
   {
     "id": 5,
@@ -106,7 +94,7 @@
     "specify": false,
     "specifyTime": [],
     "resetValue": true,
-    "desc": "總實功功率"
+    "desc": "p_dm"
   },
   {
     "id": 6,
@@ -121,6 +109,36 @@
     "specify": false,
     "specifyTime": [],
     "resetValue": false,
-    "desc": "總有效電能"
+    "desc": "kwh_total"
+  },
+  {
+    "id": 7,
+    "min": 100,
+    "max": 220,
+    "start": 4172,
+    "end": 4173,
+    "gen": true,
+    "acc": false,
+    "accTo": false,
+    "accToId": [0],
+    "specify": false,
+    "specifyTime": [],
+    "resetValue": false,
+    "desc": "voltage"
+  },
+  {
+    "id": 8,
+    "min": 1,
+    "max": 3,
+    "start": 4174,
+    "end": 4175,
+    "gen": true,
+    "acc": false,
+    "accTo": false,
+    "accToId": [0],
+    "specify": false,
+    "specifyTime": [],
+    "resetValue": false,
+    "desc": "current"
   }
 ]
